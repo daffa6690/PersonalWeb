@@ -1,4 +1,5 @@
 import pp from "../assets/pp.jpeg"
+import logoWa from "../assets/WhatsApp.svg.webp"
 
 function Hero() {
   return (
@@ -74,7 +75,7 @@ function Hero() {
                 className="w-full sm:w-auto bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-lg transition-colors flex items-center justify-center font-medium"
               >
                 <img
-                  src="src\assets\WhatsApp.svg.webp"
+                  src={logoWa}
                   alt="WhatsApp"
                   className="w-5 h-5 mr-2"
                 />
