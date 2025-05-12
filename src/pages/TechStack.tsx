@@ -23,7 +23,7 @@ const techs = [
 function TechStack() {
   return (
     <section id="techstack" className="mb-32">
-      <div className="container mx-auto max-w-screen px-4">
+      <div className="container mx-auto max-w px-4">
         <h2 className="text-xl md:text-5xl font-bold mb-12">
           Tech Stack - Tools I Use Everyday
         </h2>
@@ -35,11 +35,10 @@ function TechStack() {
 
           <Marquee
             pauseOnHover={false}
-            gradientColor=""
+            gradient={false}
             speed={50}
             direction="right"
-            gradient={true}
-            className="py-4"
+          
           >
             {techs.map((tech, idx) => (
               <div

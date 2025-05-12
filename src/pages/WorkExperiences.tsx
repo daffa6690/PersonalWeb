@@ -29,7 +29,7 @@ const WorkExperience = () => {
   return (
     <section id="experience" className="mb-32">
       
-      <div className="flex justify-between items-center mb-12 w-full ">
+      <div className="flex justify-between items-center mb-12 w-full pt-20">
         <h2 className="text-3xl md:text-4xl font-bold items-center">Work Experiences:</h2>
       </div>
 
