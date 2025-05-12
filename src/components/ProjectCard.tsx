@@ -1,6 +1,6 @@
 type Project = {
   title: string;
-  image: string;
+  image: string ;
   description: string;
   tech: string[];
   repoType: string;

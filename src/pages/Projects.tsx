@@ -1,4 +1,6 @@
 import ProjectCard, { type Project } from "../components/ProjectCard";
+import fakturly from "../assets/fakturly.png"
+import nimalis from "../assets/nimalis.png"
 
 function Projects() {
   return (
@@ -18,7 +20,7 @@ function Projects() {
 const projects: Project[] = [
   {
     title: "Fakturly",
-    image: "/src/assets/fakturly.png",
+    image: fakturly,
     description:
       "Digital invoice and payment reminder solution that makes billing management easier. Built with modern tech stack for optimal performance.",
     tech: ["Next.js", "TypeScript", "Node.js", "Tailwind"],
@@ -27,7 +29,7 @@ const projects: Project[] = [
   },
   {
     title: "Nimalis",
-    image: "/src/assets/nimalis.png",
+    image: nimalis,
     description:
       "A peer-to-peer platform connecting minimalists with those in need, enabling users to share and find free items while promoting sustainable living.",
     tech: ["Next.js", "TypeScript", "Node.js", "Tailwind"],

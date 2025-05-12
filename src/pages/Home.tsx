@@ -1,3 +1,5 @@
+import pp from "../assets/pp.jpeg"
+
 function Hero() {
   return (
     <div className="container mx-auto">
@@ -7,7 +9,7 @@ function Hero() {
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200" />
               <img
-                src="src\assets\pp.jpeg"
+                src={pp}
                 alt="Profile"
                 className="relative w-64 h-64 lg:w-[320px] lg:h-[320px] rounded-xl shadow-lg object-cover transform transition duration-500 hover:scale-105"
               />

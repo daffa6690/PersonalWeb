@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ModeToggle } from "./ui/mode-toggle";
 import logoMD from "../assets/md-logo.png"
+import logoWa from "../assets/WhatsApp.svg.webp"
 
 function Navbar() {
   const [isDrawerOpen, setDrawerOpen] = useState(false);
@@ -46,7 +47,7 @@ function Navbar() {
                 className="bg-green-500 hover:bg-green-600 text-white text-sm px-4 py-2 rounded-lg flex items-center font-medium transition-colors"
               >
                 <img
-                  src="src\assets\WhatsApp.svg.webp"
+                  src={logoWa}
                   alt="WhatsApp"
                   className="w-4 h-4 mr-2"
                 />

@@ -1,3 +1,4 @@
+import logoWa from "../assets/WhatsApp.svg.webp"
 type ContactProps = {};
 
 const Contact = (_props: ContactProps) => {
@@ -37,7 +38,7 @@ const Contact = (_props: ContactProps) => {
           </span>
           <div className="flex items-center space-x-2">
             <img
-              src="src\assets\WhatsApp.svg.webp"
+              src={logoWa}
               alt="WhatsApp"
               className="w-5 h-5 mr-2"
             />

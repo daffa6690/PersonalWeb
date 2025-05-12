@@ -1,3 +1,5 @@
+import dumbwaysLogo from "../assets/dumbways.png"
+
 interface WorkExperience {
   company: string;
   position: string;
@@ -12,7 +14,7 @@ const workExperiences: WorkExperience[] = [
     company: "DumbWays Indonesia",
     position: "Full Stack Web Developer",
     duration: "Des 2024 - Present",
-    logo: "/src/assets/dumbways.png",
+    logo: dumbwaysLogo,
     technologies: ["JavaScript", "React", "Node.js", "Express", "PostgreSQL"],
     description: [
       "Learning JavaScript, React, Node.js, and related technologies",
