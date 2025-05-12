@@ -12,7 +12,7 @@ const workExperiences: WorkExperience[] = [
     company: "DumbWays Indonesia",
     position: "Full Stack Web Developer",
     duration: "Des 2024 - Present",
-    logo: "/img/work/dumbways.png",
+    logo: "/src/assets/dumbways.png",
     technologies: ["JavaScript", "React", "Node.js", "Express", "PostgreSQL"],
     description: [
       "Learning JavaScript, React, Node.js, and related technologies",
@@ -26,13 +26,12 @@ const workExperiences: WorkExperience[] = [
 const WorkExperience = () => {
   return (
     <section id="experience" className="mb-32">
-      {/* Section Title */}
-      <div className="flex justify-between items-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold">Work Experiences:</h2>
+      
+      <div className="flex justify-between items-center mb-12 w-full ">
+        <h2 className="text-3xl md:text-4xl font-bold items-center">Work Experiences:</h2>
       </div>
 
-      {/* Work Experience List */}
-      <div className="space-y-6">
+      <div className="space-y-10">
         {workExperiences.map((experience, idx) => (
           <div
             key={idx}

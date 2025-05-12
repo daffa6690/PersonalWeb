@@ -18,7 +18,7 @@ function Projects() {
 const projects: Project[] = [
   {
     title: "Fakturly",
-    image: "/img/projects/fakturly.png",
+    image: "/src/assets/fakturly.png",
     description:
       "Digital invoice and payment reminder solution that makes billing management easier. Built with modern tech stack for optimal performance.",
     tech: ["Next.js", "TypeScript", "Node.js", "Tailwind"],
@@ -27,31 +27,12 @@ const projects: Project[] = [
   },
   {
     title: "Nimalis",
-    image: "/img/projects/nimalis.png",
+    image: "/src/assets/nimalis.png",
     description:
       "A peer-to-peer platform connecting minimalists with those in need, enabling users to share and find free items while promoting sustainable living.",
     tech: ["Next.js", "TypeScript", "Node.js", "Tailwind"],
     repoType: "Private Repository",
     demoUrl: "https://nimalis.com",
-  },
-  {
-    title: "LezzAuth",
-    image: "/img/projects/lezzauth.gif",
-    description:
-      "A ready-to-use user management platform, providing pre-built components for login and registration systems.",
-    tech: ["React", "TypeScript", "Node.js", "Tailwind"],
-    repoType: "Private Repository",
-    demoUrl: "https://lezzauth.com",
-  },
-  {
-    title: "LezzTable",
-    image: "/img/projects/lezztable.gif",
-    description:
-      "A platform that simplifies the creation of custom table-based UIs for internal tools and dashboards. Designed with flexibility and speed in mind.",
-    tech: ["React", "TypeScript", "Tailwind"],
-    repoType: "Private Repository",
-    demoUrl: "https://lezztable.com",
-  },
-];
+  },]
 
 export default Projects;

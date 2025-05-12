@@ -1,21 +1,19 @@
 function Hero() {
   return (
-    <div className="container mx-auto px-6 py-12 md:py-24">
+    <div className="container mx-auto">
       <div id="hero">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-16 mb-32">
-          {/* Left Content - Profile Image */}
           <div className="relative w-full lg:w-1/3 flex justify-center lg:justify-start">
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200" />
               <img
-                src="/img/profile.jpg"
+                src="src\assets\pp.jpeg"
                 alt="Profile"
                 className="relative w-64 h-64 lg:w-[320px] lg:h-[320px] rounded-xl shadow-lg object-cover transform transition duration-500 hover:scale-105"
               />
             </div>
           </div>
 
-          {/* Right Content */}
           <div className="w-full lg:w-2/3 text-center lg:text-left">
             <div className="mb-8">
               <h1 className="text-4xl lg:text-6xl font-bold mb-6">
@@ -32,8 +30,7 @@ function Hero() {
                 initial concept to deployment and maintenance.
               </p>
             </div>
-
-            {/* Location & Availability */}
+            
             <div className="flex flex-col items-center lg:items-start space-y-3 mb-8">
               <div className="flex items-center space-x-2">
                 <svg
@@ -67,7 +64,6 @@ function Hero() {
               </div>
             </div>
 
-            {/* Social Links & CTA */}
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
               <a
                 href="https://wa.me/6285156461618"
@@ -76,14 +72,14 @@ function Hero() {
                 className="w-full sm:w-auto bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-lg transition-colors flex items-center justify-center font-medium"
               >
                 <img
-                  src="/img/whatsapp.png"
+                  src="src\assets\WhatsApp.svg.webp"
                   alt="WhatsApp"
                   className="w-5 h-5 mr-2"
                 />
                 Let's Talk
               </a>
               <a
-                href="https://drive.google.com/file/d/1VF1FzsiomCiB9BdU_a_yT8ZSFfxSTu7x/view"
+                href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto bg-black dark:bg-white text-white dark:text-gray-900 px-8 py-3 rounded-lg hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors flex items-center justify-center font-medium"

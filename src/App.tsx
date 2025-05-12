@@ -9,23 +9,26 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
+      <div className="w-fit">
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <Navbar />
-      <div className="pt-20">
-        <Home />
-        <TechStack />
-        <WorkExperience />
-      </div>
-      <section className="max-w-4xl mx-auto px-4 py-10">
-        <h2 className="text-2xl font-bold text-white mb-6">Featured Project</h2>
+        <Navbar />
+        <div className="pt-20">
+          <Home />
+          <TechStack />
+          <WorkExperience />
+        </div>
+        <section className="mx-auto px-4 py-10">
+          <h2 className="text-2xl font-bold text-white mb-6">
+            Featured Project
+          </h2>
 
-        <Projects/>
-      </section>
-      
-        <Contact/>
+          <Projects />
+        </section>
+
+        <Contact />
         <Footer />
-      
     </ThemeProvider>
+      </div>
   );
 }
 export default App;
