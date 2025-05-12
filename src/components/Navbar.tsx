@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ModeToggle } from "./ui/mode-toggle";
+import logoMD from "../assets/md-logo.png"
 
 function Navbar() {
   const [isDrawerOpen, setDrawerOpen] = useState(false);
@@ -13,7 +14,7 @@ function Navbar() {
           <div className="flex items-center justify-between">
             <a href="/" className="group">
               <img
-                src="src/assets/md-logo.png"
+                src={logoMD}
                 alt="MD Logo"
                 className="h-11 w-auto transition-transform duration-300 group-hover:scale-110"
               />
