@@ -82,7 +82,7 @@ function Hero() {
                 Let's Talk
               </a>
               <a
-                href=""
+                href="test"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto bg-black dark:bg-white text-white dark:text-gray-900 px-8 py-3 rounded-lg hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors flex items-center justify-center font-medium"
