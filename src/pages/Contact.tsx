@@ -5,7 +5,7 @@ const Contact = (_props: ContactProps) => {
   return (
     <div id="contact">
       {/* Contact Section */}
-      <div className="mb-20 text-center">
+      <div className="container mx-auto max-w-[95vw] px-[1vw] sm:px-[2vw] md:px-[3vw] mb-12 pt-12 sm:pt-16 md:pt-20 text-center">
         <h2 className="text-2xl md:text-3xl font-bold mb-3">
           Let's build something together
         </h2>

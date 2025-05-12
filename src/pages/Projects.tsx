@@ -1,19 +1,21 @@
 import ProjectCard, { type Project } from "../components/ProjectCard";
-import fakturly from "../assets/fakturly.png"
-import nimalis from "../assets/nimalis.png"
+import fakturly from "../assets/fakturly.png";
+import nimalis from "../assets/nimalis.png";
 
 function Projects() {
   return (
-    <div id="projects" className="mb-32">
-      <div className="flex justify-between items-center mb-12">
+    <section id="projects" className="mb-5 overflow-x-hidden">
+      <div className="container mx-auto max-w-[95vw] px-[1vw] sm:px-[2vw] md:px-[3vw] mb-12">
         <h2 className="text-2xl md:text-3xl font-bold">My Projects:</h2>
       </div>
-      <div className="grid md:grid-cols-2 gap-8">
-        {projects.map((project) => (
-          <ProjectCard key={project.title} {...project} />
-        ))}
+      <div className="container mx-auto max-w-[95vw] px-[1vw] sm:px-[2vw] md:px-[3vw] mb-12 ">
+        <div className="grid md:grid-cols-2 gap-8">
+          {projects.map((project) => (
+            <ProjectCard key={project.title} {...project} />
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
 
@@ -35,6 +37,7 @@ const projects: Project[] = [
     tech: ["Next.js", "TypeScript", "Node.js", "Tailwind"],
     repoType: "Private Repository",
     demoUrl: "https://nimalis.com",
-  },]
+  },
+];
 
 export default Projects;

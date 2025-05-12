@@ -1,4 +1,4 @@
-import dumbwaysLogo from "../assets/dumbways.png"
+import dumbwaysLogo from "../assets/dumbways.png";
 
 interface WorkExperience {
   company: string;
@@ -22,54 +22,55 @@ const workExperiences: WorkExperience[] = [
       "Developing curriculum and learning materials",
       "Conducting technical interviews and assessments",
     ],
-  }
+  },
 ];
 
 const WorkExperience = () => {
   return (
-    <section id="experience" className="mb-32">
-      
-      <div className="flex justify-between items-center mb-12 max-w pt-20">
-        <h2 className="text-3xl md:text-4xl font-bold items-center">Work Experiences:</h2>
+    <section id="experience" className="mb-10 overflow-x-hidden">
+      <div className="container mx-auto max-w-[95vw] px-[1vw] sm:px-[2vw] md:px-[3vw] mb-12 pt-12 sm:pt-16 md:pt-20">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">
+          Work Experiences:
+        </h2>
       </div>
 
-      <div className="space-y-10">
+      <div className="container mx-auto max-w-[95vw] px-[1vw] sm:px-[2vw] md:px-[3vw] space-y-4 sm:space-y-6 md:space-y-10">
         {workExperiences.map((experience, idx) => (
           <div
             key={idx}
-            className="flex flex-col md:flex-row items-start bg-white dark:bg-gray-800 p-6 md:p-8 rounded-xl shadow-sm"
+            className="flex flex-col sm:flex-row items-start bg-white dark:bg-gray-800 p-5 rounded-xl shadow-sm w-full"
           >
             <img
               src={experience.logo}
               alt={experience.company}
-              className="w-16 h-16 rounded-lg mb-4 md:mb-0 object-contain bg-white"
+              className="w-12 sm:w-16 h-12 sm:h-16 rounded-lg mb-2 sm:mb-0 object-contain bg-white"
             />
-            <div className="md:ml-8 flex-grow">
-              <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+            <div className="sm:ml-4 md:ml-8 flex-grow">
+              <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-2 sm:mb-4">
                 <div>
-                  <h3 className="font-semibold text-xl md:text-2xl">
+                  <h3 className="font-semibold text-lg sm:text-xl md:text-2xl">
                     {experience.position}
                   </h3>
-                  <p className="text-green-600 dark:text-green-400 text-base">
+                  <p className="text-green-600 dark:text-green-400 text-sm sm:text-base">
                     {experience.company}
                   </p>
                 </div>
-                <span className="text-base text-gray-500 dark:text-gray-400 mt-2 md:mt-0">
+                <span className="text-sm sm:text-base text-gray-500 dark:text-gray-400 mt-1 sm:mt-0">
                   {experience.duration}
                 </span>
               </div>
 
-              <ul className="text-gray-600 dark:text-gray-400 text-base space-y-2 list-disc list-inside mb-4">
+              <ul className="text-gray-600 dark:text-gray-400 text-sm sm:text-base space-y-1 sm:space-y-2 list-disc list-inside mb-2 sm:mb-4">
                 {experience.description.map((item, idx) => (
                   <li key={idx}>{item}</li>
                 ))}
               </ul>
 
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-1 sm:gap-2">
                 {experience.technologies.map((tech, idx) => (
                   <span
                     key={idx}
-                    className="px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-full text-xs font-medium text-gray-600 dark:text-gray-400"
+                    className="px-2 sm:px-4 py-1 sm:py-2 bg-gray-100 dark:bg-gray-700 rounded-full text-xs sm:text-xs font-medium text-gray-600 dark:text-gray-400"
                   >
                     {tech}
                   </span>

@@ -3,7 +3,7 @@ import logoWa from "../assets/WhatsApp.svg.webp"
 
 function Hero() {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto max-w-[95vw] px-[1vw] sm:px-[2vw] md:px-[3vw] mb-12 pt-12 sm:pt-16 md:pt-20">
       <div id="hero">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-16 mb-32">
           <div className="relative w-full lg:w-1/3 flex justify-center lg:justify-start">
@@ -82,7 +82,7 @@ function Hero() {
                 Let's Talk
               </a>
               <a
-                href="test"
+                href="tes"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto bg-black dark:bg-white text-white dark:text-gray-900 px-8 py-3 rounded-lg hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors flex items-center justify-center font-medium"
