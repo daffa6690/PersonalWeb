@@ -23,7 +23,7 @@ const techs = [
 function TechStack() {
   return (
     <section id="techstack" className="mb-32">
-      <div className="container mx-auto max-w px-4">
+      <div className="container mx-auto px-4 max-w">
         <h2 className="text-xl md:text-5xl font-bold mb-12">
           Tech Stack - Tools I Use Everyday
         </h2>
