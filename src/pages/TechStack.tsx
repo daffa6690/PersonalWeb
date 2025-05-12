@@ -24,7 +24,7 @@ function TechStack() {
   return (
     <section id="techstack" className="mb-32">
       <div className="container mx-auto max-w-screen px-4">
-        <h2 className="text-3xl md:text-5xl font-bold mb-12">
+        <h2 className="text-xl md:text-5xl font-bold mb-12">
           Tech Stack - Tools I Use Everyday
         </h2>
 

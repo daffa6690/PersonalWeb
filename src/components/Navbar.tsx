@@ -40,7 +40,7 @@ function Navbar() {
               </a>
 
               <a
-                href="https://wa.me/6287877618724"
+                href="https://wa.me/6285156461618"
                 target="_blank"
                 className="bg-green-500 hover:bg-green-600 text-white text-sm px-4 py-2 rounded-lg flex items-center font-medium transition-colors"
               >
@@ -142,7 +142,7 @@ function Navbar() {
 
             <div className="flex flex-col px-6 py-4 space-y-6">
               <a
-                href="#tech-\stack"
+                href="#techstack"
                 className="text-base text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
               >
                 Tech Stack

@@ -14,7 +14,7 @@ function Footer() {
           </svg>
         </a>
         <a
-          href="https://www.linkedin.com/in/daffa6690"
+          href="https://www.linkedin.com/in/mohammad-daffa-b3738216a/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
