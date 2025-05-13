@@ -34,7 +34,7 @@ const WorkExperience = () => {
         </h2>
       </div>
 
-      <div className="container mx-auto max-w-[95vw] px-[1vw] sm:px-[2vw] md:px-[3vw] space-y-4 sm:space-y-6 md:space-y-10">
+      <div className="container mx-auto max-w-[95vw] px-[1vw] sm:px-[2vw] md:px-[3vw] space-y-4 sm:space-y-6 md:space-y-10 mb-12">
         {workExperiences.map((experience, idx) => (
           <div
             key={idx}

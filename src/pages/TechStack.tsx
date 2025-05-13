@@ -36,7 +36,7 @@ function TechStack() {
           <Marquee
             pauseOnHover={false}
             gradient={false}
-            speed={50}
+            speed={80}
             direction="right"
           
           >

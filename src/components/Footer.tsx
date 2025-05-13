@@ -1,9 +1,32 @@
 function Footer() {
   return (
-    <footer className="py-[2vh] sm:py-[3vh] md:py-[4vh] px-[1vw] sm:px-[2vw] md:px-[3vw] text-center text-gray-600 dark:text-gray-400 text-[2.5vw] sm:text-[2vw] md:text-[1.5vw] overflow-x-hidden">
-      <div className="container mx-auto max-w-[99vw] md:max-w-[97vw] border-t border-gray-200 dark:border-gray-700 pt-[1vh]">
+    <footer
+      className="
+        py-[2vh] sm:py-[3vh] md:py-[4vh] 
+        px-[2vw] sm:px-[3vw] md:px-[4vw] 
+        text-center 
+        text-gray-600 dark:text-gray-400 
+        text-[2.5vw] sm:text-[2vw] md:text-[1.5vw] 
+        overflow-x-hidden 
+        min-w-[300px]
+      "
+    >
+      <div
+        className="
+          container mx-auto 
+          max-w-[98vw] sm:max-w-[95vw] md:max-w-[90vw] 
+          border-t border-gray-200 dark:border-gray-700 
+          pt-[1vh]
+        "
+      >
         <p>© 2025 Designed and coded with ❤️ by Mohammad Daffa</p>
-        <div className="flex justify-center flex-wrap gap-x-[1vw] sm:gap-x-[1.5vw] md:gap-x-[2vw] mt-[1vh] sm:mt-[2vh]">
+        <div
+          className="
+            flex justify-center flex-wrap 
+            gap-x-[1.5vw] sm:gap-x-[2vw] md:gap-x-[2.5vw] 
+            mt-[1vh] sm:mt-[1.5vh] md:mt-[2vh]
+          "
+        >
           <a
             href="https://github.com/daffa6690"
             target="_blank"

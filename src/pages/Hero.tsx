@@ -5,7 +5,7 @@ function Hero() {
   return (
     <div className="container mx-auto max-w-[95vw] px-[1vw] sm:px-[2vw] md:px-[3vw] mb-12 pt-12 sm:pt-16 md:pt-20">
       <div id="hero">
-        <div className="flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-16 mb-32">
+        <div className="flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-16 mb-20">
           <div className="relative w-full lg:w-1/3 flex justify-center lg:justify-start">
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200" />

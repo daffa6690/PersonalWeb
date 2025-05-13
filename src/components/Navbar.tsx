@@ -101,7 +101,7 @@ function Navbar() {
         </div>
       </nav>
 
-      <div className="h-20"></div>
+      <div className="h-5"></div>
 
       <div
         className={`fixed inset-0 z-40 ${
