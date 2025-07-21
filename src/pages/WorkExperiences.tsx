@@ -9,7 +9,7 @@ interface WorkExperience {
   description: string[];
 }
 
-const workExperiences: WorkExperience[] = [
+export const workExperiences: WorkExperience[] = [
   {
     company: "DumbWays Indonesia",
     position: "Full Stack Web Developer",

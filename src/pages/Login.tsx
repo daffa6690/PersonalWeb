@@ -1,6 +1,6 @@
 import { useState } from "react";
 import type { FormEvent, ChangeEvent } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 interface LoginForm {
   email: string;
@@ -45,12 +45,11 @@ function Login() {
     setIsSubmitting(true);
 
     try {
-      // Simulasi API call
+      
       await new Promise((resolve) => setTimeout(resolve, 1000));
       console.log("Login success:", formData);
-
-      // ✅ Redirect ke halaman home
       navigate("/");
+
     } catch (error) {
       console.error("Login failed:", error);
       setErrors({ email: "Login failed. Please try again." });
@@ -75,7 +74,7 @@ function Login() {
         </h2>
 
         <form onSubmit={handleSubmit} className="space-y-[2vh]">
-          {/* Email */}
+          
           <div>
             <label
               htmlFor="email"
@@ -115,7 +114,6 @@ function Login() {
             )}
           </div>
 
-          {/* Password */}
           <div>
             <label
               htmlFor="password"
@@ -155,17 +153,15 @@ function Login() {
             )}
           </div>
 
-          {/* Link */}
-          <div className="flex justify-between items-center">
+          {/* <div className="flex justify-between items-center">
             <Link
               to="/forgot-password"
               className="text-[1.6vw] sm:text-xs md:text-sm text-blue-600 dark:text-blue-400 hover:underline"
             >
               Forgot Password?
             </Link>
-          </div>
+          </div> */}
 
-          {/* Submit Button */}
           <button
             type="submit"
             disabled={isSubmitting}
@@ -196,8 +192,7 @@ function Login() {
           </button>
         </form>
 
-        {/* Sign Up Prompt */}
-        <p className="mt-[2vh] text-center text-[1.6vw] sm:text-xs md:text-sm text-gray-600 dark:text-gray-400">
+        {/* <p className="mt-[2vh] text-center text-[1.6vw] sm:text-xs md:text-sm text-gray-600 dark:text-gray-400">
           Don't have an account?{" "}
           <Link
             to="/register"
@@ -205,7 +200,7 @@ function Login() {
           >
             Sign Up
           </Link>
-        </p>
+        </p> */}
       </div>
     </div>
   );

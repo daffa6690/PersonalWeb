@@ -42,7 +42,7 @@ function Footer() {
             </svg>
           </a>
           <a
-            href="https://www.linkedin.com/in/mohammad-daffa-b3738216a/"
+            href="https://www.linkedin.com/in/mdaffa21/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"

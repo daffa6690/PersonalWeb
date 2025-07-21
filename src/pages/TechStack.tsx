@@ -1,23 +1,46 @@
 import Marquee from "react-fast-marquee";
-import { FaNodeJs, FaReact } from "react-icons/fa";
-import {
-  SiExpress,
-  SiJavascript,
-  SiPostgresql,
-  SiPrisma,
-  SiTailwindcss,
-  SiTypescript,
-} from "react-icons/si";
 
-const techs = [
-  { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" /> },
-  { name: "TypeScript", icon: <SiTypescript className="text-blue-600" /> },
-  { name: "React", icon: <FaReact className="text-cyan-400" /> },
-  { name: "Tailwind CSS", icon: <SiTailwindcss className="text-sky-400" /> },
-  { name: "Node.js", icon: <FaNodeJs className="text-green-600" /> },
-  { name: "Express", icon: <SiExpress className="text-gray-600" /> },
-  { name: "Prisma", icon: <SiPrisma className="text-indigo-600" /> },
-  { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-800" /> },
+export const techs = [
+  {
+    name: "JavaScript",
+    image:
+      "https://res.cloudinary.com/dgifxur5j/image/upload/v1747291829/JavaScript_oh9sku.svg",
+  },
+  {
+    name: "TypeScript",
+    image:
+      "https://res.cloudinary.com/dgifxur5j/image/upload/v1747291829/TypeScript_o2c8sg.svg",
+  },
+  {
+    name: "React",
+    image:
+      "https://res.cloudinary.com/dgifxur5j/image/upload/v1747291828/React_njjqo5.svg",
+  },
+  {
+    name: "Tailwind CSS",
+    image:
+      "https://res.cloudinary.com/dgifxur5j/image/upload/v1747291827/Tailwind_CSS_xx40l6.svg",
+  },
+  {
+    name: "Node.js",
+    image:
+      "https://res.cloudinary.com/dgifxur5j/image/upload/v1747291827/Node.js_moxdvj.svg",
+  },
+  {
+    name: "Express",
+    image:
+      "https://res.cloudinary.com/dgifxur5j/image/upload/v1747291827/Express_quad8s.svg",
+  },
+  {
+    name: "Prisma",
+    image:
+      "https://res.cloudinary.com/dgifxur5j/image/upload/v1747291827/Prisma_mnx1ss.svg",
+  },
+  {
+    name: "PostgreSQL",
+    image:
+      "https://res.cloudinary.com/dgifxur5j/image/upload/v1747291829/PostgresSQL_dloh6c.svg",
+  },
 ];
 
 function TechStack() {
@@ -36,7 +59,7 @@ function TechStack() {
           <Marquee
             pauseOnHover={false}
             gradient={false}
-            speed={80}
+            speed={100}
             direction="right"
           
           >
@@ -46,7 +69,7 @@ function TechStack() {
                 className="flex flex-col items-center justify-center px-4 sm:px-6"
               >
                 <div className="w-16 h-16 sm:w-14 sm:h-14 bg-white dark:bg-gray-800 rounded-xl p-4 flex items-center justify-center shadow transition-transform hover:scale-105 hover:shadow-lg text-4xl">
-                  {tech.icon}
+                  <img src={tech.image}/>
                 </div>
                 <span className="mt-3 text-sm sm:text-base text-gray-600 dark:text-gray-400">
                   {tech.name}

@@ -16,7 +16,7 @@ function ProjectCard({
   demoUrl,
 }: Project) {
   return (
-    <div className="group bg-white dark:bg-gray-800 rounded-xl shadow-sm overflow-hidden transition-colors hover:shadow-md">
+    <div className="group bg-white  dark:bg-gray-800 rounded-xl shadow-sm overflow-hidden transition-colors hover:shadow-md">
       {" "}
       <div className="relative h-52 flex items-center justify-center bg-gray-100 dark:bg-gray-700">
         {" "}

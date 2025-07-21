@@ -1,13 +1,15 @@
 import { useState } from "react";
 import { ModeToggle } from "./ui/mode-toggle";
-import logoMD from "../assets/md-logo.png"
-import logoWa from "../assets/WhatsApp.svg.webp"
+import logoMD from "@/assets/md-logo.png"
+ import logoWa from "@/assets/Whatsapp.svg"
+ 
+
 
 function Navbar() {
   const [isDrawerOpen, setDrawerOpen] = useState(false);
   const openDrawer = () => setDrawerOpen(true);
   const closeDrawer = () => setDrawerOpen(false);
-
+     
   return (
     <>
       <nav className="fixed top-0 left-0 right-0 z-30 bg-white dark:bg-gray-950 transition-colors duration-300 shadow">

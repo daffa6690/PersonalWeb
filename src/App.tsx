@@ -1,21 +1,16 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Login from "./pages/Login.tsx";
-import Register from "./pages/Register.tsx";
-import Home from "./Home.tsx";
+import HomeRoute from "./routes/HomeRoute.tsx";
+// import DashboardRoute from "./routes/Dashboard.tsx";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
-function App() {
+const queryClient = new QueryClient();
+
+function App() {    
   return (
-    <div className="flex flex-col min-h-screen">
-      <main className="flex-grow">
-        <Router>
-        <Routes>
-          <Route path="/register" element={<Register/>}/>
-          <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-        </Routes>
-        </Router>
-      </main>
-    </div>
+      <div>
+        <QueryClientProvider client={queryClient}>
+        <HomeRoute/>
+        </QueryClientProvider>
+      </div>
   );
 }
 

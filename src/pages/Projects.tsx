@@ -1,6 +1,6 @@
 import ProjectCard, { type Project } from "../components/ProjectCard";
-import fakturly from "../assets/fakturly.png";
-import nimalis from "../assets/nimalis.png";
+import Circle from "../assets/circle.png";
+import DigitalCard from "../assets/digital-card.png";
 
 function Projects() {
   return (
@@ -19,24 +19,24 @@ function Projects() {
   );
 }
 
-const projects: Project[] = [
+export const projects: Project[] = [
+{
+  title: "Circle",
+  image: Circle,
+  description:
+    "Circle is a Threads-like social platform for text-based interactions, featuring a React frontend and Express backend that handles authentication, post management, and real-time feeds.",
+  tech: ["React js", "Express js","TypeScript", "Node.js", "TailwindCSS", "PostgreSQL"],
+  repoType: "Private Repository",
+  demoUrl: "https://circleku.vercel.app/",
+},
   {
-    title: "Fakturly",
-    image: fakturly,
+    title: "DumbCard",
+    image: DigitalCard,
     description:
-      "Digital invoice and payment reminder solution that makes billing management easier. Built with modern tech stack for optimal performance.",
-    tech: ["Next.js", "TypeScript", "Node.js", "Tailwind"],
+      "DumbCard is a platform to make digital business card, featuring React frontend and Express backend that make card for digital business inspired by CamCard",
+    tech: ["React js", "Express js","TypeScript", "Node.js", "TailwindCSS", "PostgreSQL"],
     repoType: "Private Repository",
-    demoUrl: "https://fakturly.my.id",
-  },
-  {
-    title: "Nimalis",
-    image: nimalis,
-    description:
-      "A peer-to-peer platform connecting minimalists with those in need, enabling users to share and find free items while promoting sustainable living.",
-    tech: ["Next.js", "TypeScript", "Node.js", "Tailwind"],
-    repoType: "Private Repository",
-    demoUrl: "https://nimalis.com",
+    demoUrl: "https://https://dumb-card-fe.vercel.app/",
   },
 ];
 
