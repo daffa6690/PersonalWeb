@@ -1,6 +1,7 @@
 import ProjectCard, { type Project } from "../components/ProjectCard";
 import Circle from "../assets/circle.png";
 import DigitalCard from "../assets/digital-card.png";
+import BotAbsen from "../assets/bot-absen.png";
 
 function Projects() {
   return (
@@ -36,8 +37,18 @@ export const projects: Project[] = [
       "DumbCard is a platform to make digital business card, featuring React frontend and Express backend that make card for digital business inspired by CamCard",
     tech: ["React js", "Express js","TypeScript", "Node.js", "TailwindCSS", "PostgreSQL"],
     repoType: "Private Repository",
-    demoUrl: "https://https://dumb-card-fe.vercel.app/",
+    demoUrl: "https://dumb-card-fe.vercel.app/",
   },
+{
+    title: "AbsenRobot by Daffa",
+    image: BotAbsen,
+    description:
+      "This is an attendance bot developed using Python and the Pyrogram framework, designed to simplify attendance tracking in Telegram groups. It's ideal for communities, work teams, online classes, or small organizations.",
+    tech: ["Python", "Pyrogram", "SQLite"],
+    repoType: "Private Repository",
+    demoUrl: "https://t.me/fakerxrobot/",
+  }
+  
 ];
 
 export default Projects;
